@@ -1,0 +1,169 @@
+:root {
+   --red: #d82e21;
+   --red-dark:#8b0000;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+html,body{
+    margin: 0;
+    margin: 0;
+}
+
+
+body{
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 20px;
+}
+
+input,
+textarea,
+button{
+    font-family: inherit;
+    font-size: 20px;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+.main img {
+    width: 100%;
+}
+ 
+.about img{
+    width: 300px;
+    border-radius: 10px;
+    
+}
+
+.about_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.about_info {
+    margin-left: 30px;
+
+}
+
+.about h1{
+ font-size: 36px}
+.about a {
+    background-color: var(--red);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+
+.about a:hover{
+  background-color: var(--red-dark)
+}
+
+/* Галерея */
+.gallery{
+    background-color: var(--red);
+}
+
+    
+
+.gallery h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    }
+    
+    .gallery img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px #000;
+      }
+      /* Форма */
+.form {
+    background-color: #2b2e82;
+}
+
+
+.form h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.form_box {
+display: flex;
+flex-direction: column;
+max-width: 400px;
+margin: 0 auto;
+}
+.form input,
+.form textarea {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+
+.form textarea {
+  height: 150px;
+ }
+   .form button {
+       background-color: var(--red);
+       color: #fff;
+       text-decoration: none;
+       border-radius: 30px;
+       padding: 10px 20px;
+       margin-top: 10px;
+       display: inline-block;
+       border: none;
+       width: 150px;
+       margin: 0 auto;
+   }
+   .form button:hover {
+     background-color: var(--red-dark);
+   }
+
+@media screen and ( max-width: 600px) {
+.about_wrapper {
+    flex-direction: column;
+ }
+ .about img {
+   margin-bottom: 30px;
+ }
+ .gallery-images {  grid-template-columns: repeat(2, 1fr);
+ }
+}
+     
+     
+ @media screen and ( max-width: 400px) {
+        .gallery_images {
+            grid-template-columns: repeat(1, 1fr);
+        }
+}
+    
